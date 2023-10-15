@@ -1,0 +1,23 @@
+;; With Leiningen, I can't run my Kaocha REPL stuff (stuff in
+;; com.nomistech/kaocha-with-nomis-hacks).
+;; - I get:
+;;     #<Future@60f2b477: :pending>java.lang.UnsatisfiedLinkError: Can't load library: /var/folders/fy/6j0ljm_j1tb1bmdsh82w2xvh0000gn/T/jna6362225731952575623.tmp
+;; But:
+;; - with Clojure CLI, it's OK.
+;; - With Leiningen and lambdaisland/kaocha, all is OK.
+;;
+;; I've not had problems with other projects.
+;;
+;; Conclusion:
+;; - There's a problem with the way I'm building the jar file for
+;;   com.nomistech/kaocha-with-nomis-hacks.
+;;
+;; For now I'm jusing Clojure CLI in this project.
+
+{:paths ["src/main/clj"
+         "src/test/clj"]
+ :resource-paths ["src/test/resources/"]
+ :mvn/repos {"redplanet-releases" {:url "https://nexus.redplanetlabs.com/repository/maven-public-releases"}}
+ :deps {org.clojure/clojure  {:mvn/version "1.11.1"}
+        com.rpl/rama         {:mvn/version "0.10.0"}
+        com.rpl/rama-helpers {:mvn/version "0.9.1"}}}
