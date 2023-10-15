@@ -2,7 +2,8 @@
   :source-paths ["src/main/clj"]
   :test-paths ["src/test/clj"]
   :dependencies [[com.rpl/rama-helpers "0.9.1"]
-                 [org.asynchttpclient/async-http-client "2.12.3"]]
+                 [org.asynchttpclient/async-http-client "2.12.3"]
+                 [org.clojure/clojure "1.11.1"]]
   :repositories [["releases" {:id "maven-releases"
                               :url "https://nexus.redplanetlabs.com/repository/maven-public-releases"}]]
 
