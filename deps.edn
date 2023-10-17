@@ -15,8 +15,8 @@
 ;; For now I'm jusing Clojure CLI in this project.
 
 {:paths ["src/main/clj"
-         "src/test/clj"]
- :resource-paths ["src/test/resources/"]
+         "src/test/clj"
+         "src/test/resources/"]
  :mvn/repos {"redplanet-releases" {:url "https://nexus.redplanetlabs.com/repository/maven-public-releases"}}
  :deps {org.clojure/clojure  {:mvn/version "1.11.1"}
         com.rpl/rama         {:mvn/version "0.10.0"}
