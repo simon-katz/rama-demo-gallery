@@ -6,6 +6,19 @@
   (:import [com.rpl.rama.helpers ModuleUniqueIdPState]))
 
 
+
+
+
+
+;; *****************************************************************************
+;; **** Note: This might be out of date now. Need to re-generate it. ****
+;; *****************************************************************************
+
+
+
+
+
+
 (defrecord Registration [uuid username pwd-hash])
 (defrecord ProfileEdit [field value])
 (defrecord ProfileEdits [user-id edits])
